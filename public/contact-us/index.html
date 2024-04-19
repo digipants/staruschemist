@@ -138,7 +138,7 @@
         <div data-w-id="92a8d9be-2b86-6361-2ecb-849b408b23c7" class="contacts-form-wrapper">
           <h3 class="contacts-form-title">Send us a message</h3>
           <div class="contact-form-block w-form">
-            <form id="myForm" data-netlify="true" name="email-form" data-name="Email Form" method="POST"
+            <form id="myForm" action="/thanks" data-netlify="true" name="email-form" data-name="Email Form" method="POST"
               data-wf-page-id="64098ef78120f68423607a5d" data-wf-element-id="ea41af14-8b87-8ae8-ae5d-f8373dc8aafa">
               <input class="contacts-input w-input" maxlength="256" name="name" data-name="Name" placeholder="Your name"
               type="text" id="name" required="" />
@@ -148,7 +148,7 @@
               class="contacts-textarea w-input"></textarea>
               <input type="submit" data-wait="Please wait..." class="primary-button-form w-button" value="Submit" />
             </form>
-            <div class="success-message-form form-done">
+            <div class="success-message-form w-form-done">
               <div>Thank you! Your submission has been received!</div>
             </div>
             <div class="error-message-form w-form-fail">
@@ -358,15 +358,6 @@
     type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
     crossorigin="anonymous"></script>
   <script src="/assets/js/app.js" type="text/javascript"></script>
-  <script>
-    document.getElementById("myForm").addEventListener("submit", function (event) {
-      event.preventDefault(); // Prevents the default form submission behavior
-
-      // You can perform any form submission related tasks here
-      // For demonstration, let's show a message
-      document.getElementById("form-done").style.display = "block";
-    });
-  </script>
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
