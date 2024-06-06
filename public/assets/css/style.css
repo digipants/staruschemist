@@ -9937,7 +9937,7 @@ figure {
   }
 
   .menu-wrap {
-    width: 320px;
+    max-width: 320px;
     background-color: var(--white);
     flex-direction: column;
     align-items: flex-start;
